@@ -11,6 +11,18 @@ public class Product {
         Quantity = quantity;
     }
 
+    public double TotalValueInStock(){
+        return this.Price * this.Quantity;
+    }
+
+    public void AddProducts(int quantity) {
+        this.Quantity += quantity;
+    }
+
+    public void RemoveProducts(int quantity){
+        this.Quantity -= quantity;
+    }
+
     public String getName() {
         return Name;
     }
