@@ -46,4 +46,9 @@ public class Product {
     public void setQuantity(int quantity) {
         Quantity = quantity;
     }
+
+    @Override
+    public String toString() {
+        return this.Name + ", $ " + String.format("%.2f", Price) + ", " + this.Quantity + ", Total: $ " + String.format("%.2f", TotalValueInStock());
+    }
 }
